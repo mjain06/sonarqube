@@ -12,6 +12,7 @@ jobs:
       uses: philips-software/sonar-scanner-action@v1.3.0
       with:
             projectName: test2
+            projectKey: test2
     - name: Check Out Source Code
       uses: actions/checkout@v2
       with:
