@@ -13,6 +13,7 @@ jobs:
       with:
             projectName: test2
             projectKey: test2
+            token: test2
     - name: Check Out Source Code
       uses: actions/checkout@v2
       with:
