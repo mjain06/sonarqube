@@ -2,11 +2,14 @@ name: Build
 on:
   push:
     branches: [ main ]
+    
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - name: SonarQube Scanner Action
+      uses: philips-software/sonar-scanner-action@v1.3.0
     - name: Check Out Source Code
       uses: actions/checkout@v2
       with:
